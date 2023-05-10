@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRTD Interns</title>
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="12">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1">Navbar</span>
+        </nav>
+        <% for (let i = 0; i < data.length; i++) { %>
+            <div class="card">
+                <h5 class="card-header"><%= data[i][0] %></h5>
+                <div class="card-body">
+                    <p class="card-text">Qualification : <%= data[i][1] %></p>
+                    <p class="card-text">Branch : <%= data[i][2] %></p>
+                    <p class="card-text">Date of Application : <%= data[i][3] %></p>
+                    <p class="card-text">State : <%= data[i][4] %></p>
+                    <a href="#" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/socket.io.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/bundle.js"></script>
+</body>
+</html>
